@@ -1,21 +1,67 @@
 <!Doctype html>
 <html>
     <head>
-        <title>OVI: Diseño De Sitios Web</title>
+        <title>OVI DISEÑO DE SITIOS WEB</title>
         <meta charset="UTF-8">
         <meta name= "author" content= "Alvaro Hernandez, halvarithoher24@gmail.com">
         <link href="https://fonts.google.com/specimen/Open+Sans#glyphs" rel="stylesheet">
-        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="menu.css" >
     </head>
-    
     <body>
-        <li> <b>Block: </b>Los elementos a nivel bloque siempre comienza en una nueva línea y ocupa todo el ancho que se encuentra disponible, es decir que se expandirá hacia la izquierda como a la derecha tanto como puede. Un ejemplo de un elemento a nivel “block” es el elemento <b>DIV</b> </li>
-         <br /> <b>elemento DIV: </b> <br /> 
-        <b>1.</b> El elemento DIV se utiliza a menudo como contenedor para otros elementos HTML. <br />
-        <b>2.</b> El DIV elemento tiene atributos no son necesarios, pero style, class e id son comunes. <br />
-        <b>3.</b> Cuando se usa junto con CSS, el elemento DIV se puede usar para diseñar bloques de contenido ejemplo: <br/>
-        <br /> <img src="Imagenes/ejemplo div.png" alt="Elemento Div"><br/>
-        Siguiendo con el mismo ejemplo anterior, si simplemente sustituimos los <b>span</b> por elementos <b>div</b>, ahora las cajas son elementos de bloque, y se renderizarán de la siguiente manera:
-        <img src="Imagenes/div element.png" alt="Ejemplo div"><br />
+        <script src="js/modernizr.js"></script>
+        <script src="js/prefixfree.min.js"></script>
+        <script src="js/jquery-3.2.0.js"></script>
+
+        <header>
+            <h1>OVI DISEÑO DE SITIOS WEB</h1>
+            <h2>Author: Alvaro Hernandez <br />Grupo: 301122_54 </h2>
+        </header>
+
+        <nav>
+            <ul class="menu">
+               <li> <a class="menu" href="Index.html">Inicio</a> </li>
+                <li><a class="menu" href="concepto.html">Concepto </a>
+                 <ul>
+                       <li><a class="menu" href="css.html"> CSS</a></li>
+                       <li><a class="menu" href=""> Display </a>
+                            <ul>
+                                <li><a class="menu" href="block.html">Block</a></li>
+                                <li><a class="menu" href="inline.html">Inline</a></li>
+                                <li><a class="menu" href="inlineblock.html">inline-block</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="menu" href="">Recursos </a>
+                 <ul>
+                    <li><a class="menu" href="multimedia.html">Multimedia</a> </li>
+                    <li><a class="menu" href="descargas.html">Descargas</a></li>
+                </ul>
+                <li><a class="menu" href="">Autoevaluación</a></li>
+                <li><a class="menu" href="autor.html">Autor</a></li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <h3 style="color: #F0B429; text-align: justify;"><b>Block:</b></h3>
+                <p>Los elementos a nivel bloque siempre comienza en una nueva línea y ocupa todo el ancho que se encuentra disponible, es decir que se expandirá hacia la izquierda como a la derecha tanto como puede. Un ejemplo de un elemento a nivel “block” es el elemento <b>DIV</b><br /></p>
+                <h3 style="color: #F0B429;margin-top: 3px;"><b>Elemento DIV:</b><br /></h3>
+                <p><b>1.</b> El elemento DIV se utiliza a menudo como contenedor para otros elementos HTML. <br /></p>  
+                <p><b>2.</b> El DIV elemento tiene atributos no son necesarios, pero style, class e id son comunes. <br /></p>
+                <p><b>3.</b> Cuando se usa junto con CSS, el elemento DIV se puede usar para diseñar bloques de contenido ejemplo: <br/></p>
+                <img style="width: 700px; height: auto; display: block;" src="Imagenes/ejemplo div.png" alt="Elemento Div"><br/>
+                <p> Con el mismo ejemplo anterior, si simplemente sustituimos los <b>span</b> por elementos <b>div</b>, ahora las cajas son elementos de bloque, y se renderizarán de la siguiente manera:</p>
+                <img style="display: block;" src="Imagenes/div element.png" alt="Ejemplo div"><br />
+            </article>
+            <aside>
+                <h3><br/> Noticias</h3>
+                <a class="twitter-timeline" data-width="600" data-height="600" data-dnt="true" href="https://twitter.com/UniversidadUNAD">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="UTF-8"></script>
+            </aside> 
+            <footer>
+                <h4> UNIVERSIDAD NACIONAL ABIERTA Y A DISTANCIA | DISEÑO DE SITIOS WEB GRUPO_301122_54<br>2020 TODOS LOS DERECHOS RESERVADOS </h4>
+                <h4> VISITAS <script type="text/javascript" src="https://counter1.fcs.ovh/private/counter.js?c=g86kketrx9lky8rj3azub5ta7a7ed2wd"></script> <noscript><a href="https://www.contadorvisitasgratis.com" title="contadores para paginas web"><img src="https://counter1.fcs.ovh/private/contadorvisitasgratis.php?c=g86kketrx9lky8rj3azub5ta7a7ed2wd" title="contadores para paginas web" alt="contadores para paginas web"></a></noscript></h4>
+            </footer>
+        </section>
+       
     </body>
 </html>
