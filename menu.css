@@ -1,102 +1,103 @@
-#pagina
+#contenid0
 {
-    width: 1300px;
+    width: 0px;
     height: auto;
     margin: auto;
     position: relative;
 }
+img
+{
+    
+    width: 200px;
+    height: auto;
+    display: block;
+}
 body
 {
-    background-color: blue;
-}
-h1
-{
-    margin-top: 35px;
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 60px;
-    text-align: right;
-    margin-right: 145px;
-    color: white;
-    margin-bottom: 0px;
-}
-h2 
-{
-    margin-left: 180px;
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 40px;
-    text-align: center;
-    color: white;
-    margin-top: 15px;
-}
-h3 
-{
-    margin-top: 15px;
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    color: #F0B429;
-}
-h4 
-{
-    margin-top: 5px;
-    padding: 0px;
-    text-align: center;
-    font-size: 15px;
-    color: #005883;
-    margin-bottom: 5px;
-}
-h5
-{
-    margin-top: 0px;
-    padding: 0px;
-    text-align: center;
-    font-size: 20px;
-    color: #005883;
-    margin-bottom: 5px;
+    margin: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: whitesmoke;
 }
 header
 {
-    background-image: url(../img/UNAD1.png);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 200px 145px;
-    width: 1250px;
-    height: 145px;
-    background-color: rgba(255, 255, 255, 0);
-    margin-bottom: 15px;
-    margin-left: 50px;
+    margin: auto;
+    position: relative;
+}
+h1 
+{
+    margin-top: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    text-align: right;
+    margin-right: 215px;
+    color: #005883;
+    margin-bottom: 0px;
+}
+h2
+{
+
+    margin-left: 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #005883;
+    margin-top: 15px;
+}
+h3
+{
+    margin-left: 30px ;
+    color: #F0B429;
+    font-size: 30px;
+    margin-top: -5px;
+}
+h4
+{
+    margin-top: 5px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: #005883;
+    margin-bottom: 7px;
+    
 }
 
-nav 
+p
+{
+    margin-left: 12px;
+    color: #005883;
+    font-size: 16px;
+    margin-left: 10px;
+}
+nav
 {
     text-align: center;
-    width: 1300px;
+    width: 1348px;
     height: 50px;
-    background-color: #F0B429;
-    border-radius: 5px;
+    background-color: #f0b429;
+    border-radius: 2px;
     border-bottom-right-radius: 0; 
-    margin-bottom: 0px;
-    display: block;
+    margin-bottom: 10px;
+    display: inline-block;
+    justify-content: center;
 }
-ul 
+ul
 {
-    
     margin: 0px;
     padding: 0px;
     display: inline-block;
 }
-li 
-{ 
+li
+{
     float: left;
     list-style-type: none;
     background-color: #F0B429;
-    /*border-radius: 5px;
-    box-shadow: 0 0 5px black inset;*/
     width: inherit;
     height: 35px;
     font-size: 25px;
     color: white;
     margin-right: 30px;
+    margin-left: 30px;
     padding-top: 8px;
     padding-bottom: 5px;
 }
@@ -104,17 +105,24 @@ li ul
 {
     position: inherit;
     display: none;
-    width: 230px;
-
+    width: 200px;
 }
- 
-li ul a
+li ul > a
 {
     font-size: 20px;
 }
 li:hover ul
 {
- display: block;    
+    display: block;
+}
+li ul li
+{
+    position: relative;
+}
+li ul li ul
+{
+    right: -150px;
+    top: -80%;
 }
 section
 {
@@ -130,12 +138,58 @@ article
     width: 700px;
     float: left;
 }
-p{
-    color: white;
-    font-size: 20px;
-    text-align: justify;
-    margin-left: 10px;
+aside
+{
+    /*background-color: blue;*/
+    width: 280px;
+    float: left;
+    margin-left: 20px;
+    height: 490px;
+    padding-left: 19px;
+    
+    /*margin-left: 20px;*/
 }
+hr
+{
+    z-index: -1;
+    background-color: black;
+    border-color: beige;
+    left: 714px;
+    width:4px;
+    height: 540px;
+    top: 290px;
+    position: absolute;
+    margin: 0%;
+}
+footer
+{
+    position: sticky;
+    height: 76px;
+    background-color: #F0B429;
+    width: 1349px;
+    clear: both;
+    top: 820px;
+    text-align: center;
+}
+footer img
+{
+    margin: 0px;
+    height: 0px;
+    width: auto;
+    
+}
+figure
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+
+/*clases*/
 .ancho_menu_home{width: 900px;}
 .ancho_menu_paginas{width: 970px;}
 
@@ -149,8 +203,8 @@ p{
 
 /*seudo clases*/
 
-li:hover{
+li:hover
+{
     background-color: #F0B429;
-    z-index: 1
-    
+    z-index: 2   
 }
